@@ -1,0 +1,152 @@
+.app{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   margin: auto; 
+box-sizing: border-box; 
+}
+.home {
+  height: 850px;
+  width: 1100px;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.home-box {
+  height: 800px;
+  width: 1030px;
+}
+.main {
+  height: 830px;
+  width: 1020px;
+  /* background-color: rgb(112, 164, 129); */
+ 
+}
+.header {
+  height: 70px;
+  width: 1030px;
+  background-color:black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.box-con {
+  display: flex;
+  height: 700px;
+  width: 1030px;
+margin: auto;
+justify-content: center;
+  align-items: center;
+background-color: rgb(0, 0, 0);
+}
+.footer {
+  height: 30px;
+  width: 1030px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+.link {
+  all: unset;
+}
+.nav-link {
+  height: 50px;
+  width: 1000px;
+  background-color:#000000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-items {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-items {
+
+    display: flex;
+    height: 670px;
+    width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+  background-color: #F2F2F2;
+}
+.box {
+   height: 500px;
+  width: 500px;
+  border-radius: 10px; 
+  display: grid; 
+   justify-content: center; 
+}
+
+.rating {
+  display: flex;
+  gap: 3px;
+}
+
+.counter {
+  height: 35px;
+  width: 35px;
+}
+.Rbtn {
+  height: 35px;
+  width: auto;
+}
+img {
+  display: flex;
+  text-align: center;
+}
+.cart {
+  height: 40px;
+  width: 300px;
+  border-radius: 12px;
+ background-color: rgb(206, 136, 5);
+}
+.error {
+  display: flex;
+  height: 700px;
+  width: 1000px;
+  text-align: center;
+  justify-content: center;
+margin: auto;
+  align-items: center;
+  background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+}
+
+.contact {
+  display: grid;
+  height: 700px;
+  width: 1150px;
+  text-align: center;
+  justify-content: center;
+margin: auto;
+  align-items: center;
+  background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+}
+
+.heel {
+  width: 50px;
+  height: 50px;
+}
+.toggle-btn {
+  all: unset;
+ font-size: 50px;
+}
+.rated {
+  color: orange;
+}
+@media (min-width: 1100px) {
+  p {
+    font-size: 15px;
+  }
+}
+.display-text {
+  color: white;
+}
