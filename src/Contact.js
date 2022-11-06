@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ErrorBoundary from "./ErrorBoundary";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+
 
 function Name() {
  const [name, setName] = useState(" ");
@@ -18,7 +18,7 @@ function Name() {
  return (
    <div>
 <label for="review">REVIEW <span ></span></label><br/><br/>
-     <input required aria-required="true"  onChange={handleInput} type="text" placeholder="tell us more"/>
+     <input className="review-box" required aria-required="true"  onChange={handleInput} type="text" placeholder="tell us more"/>
     <br/> <button type="submit" value="Submit" onClick={handleClick}>submit</button>
      <p className="display-text">{display}</p>
    </div>

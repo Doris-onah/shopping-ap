@@ -18,7 +18,7 @@ function Home() {
             <img src={NikeL} className="logo" alt="Vite logo" width="40px" height="40px"/>
             <div className="nav-items">
               
-              <Link to="CountHook" className="link">
+              <Link to="Men" className="link">
                 Men
               </Link>
               <Link to="ShowReducer" className="link">

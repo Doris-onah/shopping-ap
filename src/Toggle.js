@@ -8,7 +8,7 @@ function Toggle() {
         setToggle(!toggle)
     }
     return(
-        <div>
+        <div className="toggle-stars">
 <button type="button" aria-label="Back to the page" title="Close popup" className="toggle-btn" onClick={handleClick}>{toggle? <AiTwotoneStar className="rated"/> : <AiOutlineStar className="unrated"/>}</button>
         </div>
     )

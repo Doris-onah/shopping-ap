@@ -3,6 +3,7 @@ import { useReducer} from 'react';
 import StateReducer from './StateReducer';
 import BlackH from "../src/images/BlackH.jpeg"
 import Toggle from './Toggle';
+import { Helmet } from 'react-helmet-async';
 
 function ShowReducer() {
   const initialState = 0;
@@ -11,9 +12,14 @@ function ShowReducer() {
 
   return (
     <div className="box-con">
+        <Helmet>
+    <title>showreducer</title>
+    <meta name="description" content="counter showing useReducer"/>
+    <link rel="canonical" href='ShowReducer'/>
+  </Helmet>
 <div className="box-items">
       <div className="box">
-    <img src={BlackH} width="400PXpx"  height="400px"alt="heel" />
+    <img src={BlackH} width="438px"  height="407px"alt="heel" />
     <br/>
     <div className='rating'>
 <Toggle/> <Toggle/> <Toggle/> <Toggle/> <Toggle/>
@@ -22,7 +28,7 @@ function ShowReducer() {
 
       <div>
       <div>
-      <h1>BLACK HEEL</h1>
+      <h1>CREAMY BLACK PENCIL HEEL</h1>
       <h2>PRICE: 76,000</h2>
       <ul>
       <li>Heel height: 10cm</li>
@@ -32,8 +38,8 @@ function ShowReducer() {
       </div>
   
       <div className="card">
-        <button type="button" className="counter" onClick={() => dispatch({ type: 'increment' })}> + </button>
-        <button type="button" className="counter">{count}</button>
+       <div> <button type="button" className="counter" onClick={() => dispatch({ type: 'increment' })}> + </button></div>
+       <div> <button type="button" className="counter">{count}</button></div>
         <button type="button" className="counter" onClick={() => dispatch({ type: 'decrement' })}>-</button>
         <button type="button" className="Rbtn" onClick={() => dispatch({ type: 'reset' })}>reset</button>
         <button type="button"  className="Rbtn"onClick={() => dispatch({ type: 'setvalue' })}>setValue</button>
