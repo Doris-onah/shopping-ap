@@ -1,0 +1,35 @@
+.layout {
+    max-width: 100%;
+    width: 1440px;
+    height: 100%;
+    background-color: rgb(218, 216, 216);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin > button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    /* font-size: 15px;
+    font-weight: 600; */
+    color: black;
+    cursor: pointer;
+}
+.error ,.signin, .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    
+}
+@media screen and (max-width: 600px) {
+    .layout {
+        width: 100%;
+        height: 100%;
+    }
+}
+    

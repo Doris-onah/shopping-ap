@@ -1,39 +1,41 @@
 import React from "react";
-import CountHook from "./CountHook"
 import { Helmet } from "react-helmet-async";
-import data from "./Sneakers.json";
+import data from "./Heels.json";
+// import data from "./Sneakers.json";
 import { useState } from "react";
+import ShowReducer from "./ShowReducer";
 
-function Men() {
-  
-  const [shoe] = useState(data.shoes);
- 
+function Heels() {
+  const [female] = useState(data.femaleShoes);
+  // const [shoe] = useState(data.shoes);
     return (
     <div className="men"> 
      <Helmet>
-    <title>Men</title>
+    <title>women collection</title>
     <meta name="description" content="counter page implemented with custom hook"/>
-    <link rel='canonical' href='Men' />
+    <link rel='canonical' href='Heels' />
   </Helmet>
-  <div className="bk">
+
+  <div className="background-img">
     <div>
     <h1>Premium Wear Collection</h1>
-    <p>The Epitome of Men's Clothing.</p>
+    <p>The Epitome of women's Heels.</p>
     <button className="explore">Explore</button>
    </div>
   </div>
   <div className="men-con">
-  {shoe
-    .map((id) => {
+ 
+  {female.map((id) => {
 return (
   <div className="shoes">
-  <CountHook
+  <ShowReducer
   key={id}
+  image={id.image}
   name={id.name}
   price={id.price}
   color={id.color}
-  image={id.image}
-  />
+  
+/>
   </div>
   )})}
   
@@ -41,4 +43,4 @@ return (
        </div>
     )
 }
-export default Men;
+export default Heels;
